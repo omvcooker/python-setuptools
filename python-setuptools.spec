@@ -2,8 +2,8 @@
  
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
-Version:	0.6.16
-Release:	%mkrel 1
+Version:	0.6.30
+Release:	1.auto
 License:	Zope Public License (ZPL)
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/distribute
@@ -151,4 +151,5 @@ export CFLAGS="%{optflags}"
 + Revision: 88724
 - rebuild for new python
 - Import python-setuptools
+
 
