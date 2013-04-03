@@ -3,7 +3,7 @@
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
 Version:	0.6.32
-Release:	1
+Release:	OBSOLETED BY python-distribute
 License:	Zope Public License (ZPL)
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/distribute
