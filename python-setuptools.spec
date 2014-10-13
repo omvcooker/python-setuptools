@@ -10,7 +10,6 @@ Url:		http://pypi.python.org/pypi/setuptools
 Source0:        http://pypi.python.org/packages/source/s/setuptools/setuptools-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-devel
-BuildRequires:	subversion
 Requires:	python-devel
 Requires:	python-pkg-resources
 %rename	python-distribute
