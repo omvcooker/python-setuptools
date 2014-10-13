@@ -3,7 +3,7 @@
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
 Version:	6.1
-Release:	2
+Release:	3
 License:	Zope Public License (ZPL)
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/setuptools
@@ -13,7 +13,8 @@ BuildRequires:	python-devel
 Requires:	python-devel
 Requires:	python-pkg-resources
 %rename	python-distribute
-
+Provides:	python3egg(setuptools)
+Provides:	python3egg(distribute)
 %description
 A collection of enhancements to the Python distutils that allow 
 you to more easily build and distribute Python packages, especially 
@@ -23,6 +24,8 @@ ones that have dependencies on other packages.
 Summary:        Python Distutils Enhancements
 Group:          Development/Python
 %rename python2-distribute
+Provides:	pythonegg(setuptools)
+Provides:	pythonegg(distribute)
 
 %package -n python-pkg-resources
 Summary: Runtime module to access python resources
