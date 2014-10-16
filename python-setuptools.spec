@@ -3,7 +3,7 @@
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
 Version:	6.1
-Release:	7
+Release:	8
 License:	Zope Public License (ZPL)
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/setuptools
@@ -41,6 +41,7 @@ bundled files and resources, including those inside of zipped .egg files.
 Summary: Runtime module to access python resources
 Group:  Development/Python
 Conflicts: python-setuptools < 0.6c9-2mdv
+Conflicts: python-pkg-resources < 6.1
 
 %description -n python-pkg-resources
 Module used to find and manage Python package/version dependencies and access
