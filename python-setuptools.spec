@@ -3,13 +3,13 @@
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
 Version:	8.2
-Release:	1
+Release:	2
 License:	Zope Public License (ZPL)
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/setuptools
 Source0:        http://pypi.python.org/packages/source/s/setuptools/setuptools-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-devel
+BuildRequires:	pkgconfig(python3)
 Requires:	python-devel
 Requires:	python-pkg-resources
 %rename	python-distribute
@@ -27,6 +27,7 @@ Group:          Development/Python
 %rename python2-distribute
 Provides:	pythonegg(setuptools)
 Provides:	pythonegg(distribute)
+BuildRequires:	pkgconfig(python2)
 
 %package -n python-pkg-resources
 Summary: Runtime module to access python resources
