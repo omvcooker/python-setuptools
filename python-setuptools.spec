@@ -1,4 +1,5 @@
 %define module	setuptools
+%define _xz_threads 0
  
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
