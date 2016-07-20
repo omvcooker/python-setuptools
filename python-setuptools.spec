@@ -3,8 +3,8 @@
  
 Summary:	Python Distutils Enhancements
 Name:		python-%{module}
-Version:	11.3
-Release:	4
+Version:	24.1.0
+Release:	1
 License:	Zope Public License (ZPL)
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/setuptools
@@ -79,7 +79,7 @@ pushd python3
 popd
 
 %files
-%doc python3/*.txt
+%doc python3/*.rst
 %{_bindir}/easy_install
 %{_bindir}/easy_install-%{py3_ver}
 %{py_puresitedir}/*
@@ -89,7 +89,7 @@ popd
 %{py_puresitedir}/pkg_resources
 
 %files -n python2-setuptools
-%doc python2/*.txt
+%doc python2/*.rst
 %{_bindir}/easy_install-%{py2_ver}
 %{py2_puresitedir}/*
 %exclude %{py2_puresitedir}/pkg_resources
